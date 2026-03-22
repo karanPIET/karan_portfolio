@@ -176,13 +176,26 @@ export default function Portfolio() {
           </div>
         </section>
 
-        {/* Projects Section */}
+     {/* Projects Section */}
         <section className="section">
           <h2 className="section-title">Projects</h2>
           <div className="project-item">
-            <h3 className="project-title">News Aggregation Platform</h3>
+            <h3 className="project-title">
+              <a 
+                href="https://karnworld.netlify.app/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="company-name"
+                style={{ 
+                  textDecoration: 'none',
+                  cursor: 'pointer'
+                }}
+              >
+                News Aggregation Platform 🔗
+              </a>
+            </h3>
 
-
+                  
             
             <p className="project-tech">React.js, NEWSAPI</p>
             <p className="text-content">
