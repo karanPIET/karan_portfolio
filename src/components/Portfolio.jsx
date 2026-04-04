@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Linkedin, Github, Phone, MapPin, Award, Briefcase, GraduationCap, Code } from 'lucide-react';
+import { Mail, Linkedin, Github, Phone, MapPin, Award, Briefcase, GraduationCap, Code, Rocket } from 'lucide-react';
 import profilePic from '../images/Karan_LatestPhoto.jpg.jpg';
 
 export default function Portfolio() {
@@ -24,6 +24,15 @@ export default function Portfolio() {
             </div>
           </div>
           <div className="contact-links">
+            <a 
+              href="https://karnworld.netlify.app/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="contact-link product-link"
+            >
+              <Rocket size={18} />
+              <span className="product-text">My Product</span>
+            </a>
             <a href="mailto:karangoyal2909@gmail.com" className="contact-link">
               <Mail size={18} />
               karangoyal2909@gmail.com
@@ -234,4 +243,3 @@ export default function Portfolio() {
     </div>
   );
 }
-
