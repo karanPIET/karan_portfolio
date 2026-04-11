@@ -28,15 +28,13 @@ body {
   margin: 0 auto;
 }
 
- .profile-section {
+.profile-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
   margin-bottom: 2rem;
-} 
-
-
+}
 
 @media (min-width: 768px) {
   .profile-section {
@@ -68,7 +66,7 @@ body {
   font-size: 2.25rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
-  color: #f1f5f9;  /* Almost white - clean and clear */
+  color: #f1f5f9;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   position: relative;
   z-index: 10;
@@ -108,19 +106,23 @@ body {
   color: #60a5fa;
 }
 
-/* Product Link - Special Styling */
+/* --- UPDATED PRODUCT LINK STYLING --- */
+
 .product-link {
   background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
   color: white !important;
   font-weight: 600;
-  padding: 0.6rem 1rem;
+  padding: 0.6rem 1.2rem;
   border-radius: 9999px;
   box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  display: inline-flex;
+  align-items: center;
 }
 
+/* The Shine Effect - Now uses an Animation */
 .product-link::before {
   content: '';
   position: absolute;
@@ -128,24 +130,42 @@ body {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-  transition: left 0.5s ease;
+  background: linear-gradient(
+    90deg, 
+    transparent, 
+    rgba(255, 255, 255, 0.4), 
+    transparent
+  );
+  animation: shine-loop 3s infinite;
 }
 
-.product-link:hover {
-  color: white !important;
-  box-shadow: 0 6px 25px rgba(37, 99, 235, 0.5);
-  transform: translateY(-2px);
+@keyframes shine-loop {
+  0% { left: -100%; }
+  20% { left: 100%; }
+  100% { left: 100%; }
 }
 
-.product-link:hover::before {
-  left: 100%;
+/* Interaction Effects */
+@media (hover: hover) {
+  .product-link:hover {
+    box-shadow: 0 6px 25px rgba(37, 99, 235, 0.5);
+    transform: translateY(-2px);
+  }
+}
+
+.product-link:active {
+  transform: scale(0.96); /* Provides physical feedback on mobile tap */
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.4);
 }
 
 .product-text {
   font-size: 0.95rem;
   letter-spacing: 0.5px;
+  position: relative;
+  z-index: 2;
 }
+
+/* --- REST OF THE PORTFOLIO --- */
 
 .main-content {
   max-width: 56rem;
