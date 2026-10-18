@@ -66,7 +66,7 @@ export default function Portfolio() {
             >
               <Rocket size={18} />
               <span className="product-text">
-                Product Experiments
+                News Website
               </span>
             </a>
 
