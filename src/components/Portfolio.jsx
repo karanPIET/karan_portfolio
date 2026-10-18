@@ -163,7 +163,7 @@ export default function Portfolio() {
 
 
 
-        {/* Awards Section */}
+        {/* Awards Section
 
         <section className="section award-section">
 
@@ -195,6 +195,51 @@ export default function Portfolio() {
 
           </div>
 
+        </section> */}
+        
+        {/* Awards Section */}
+        <section className="section award-section">
+          <h2 className="section-title">
+            <Award className="section-icon" size={24} />
+            Recognition
+          </h2>
+
+          {/* Q3 2025 - Constellation Award */}
+          <div className="award-item">
+            <h3 className="award-title">
+              Stellar Award – Constellation Category (Q3 2025)
+            </h3>
+
+            <p className="award-org">
+              Paisabazaar Stellar Awards | July–September 2025
+            </p>
+
+            <p className="text-content">
+              Recognized as part of the team for delivering high-quality
+              solutions and contributing to team excellence and innovation.
+              Received the award certificate from the CEO in recognition
+              of the team's collective efforts.
+            </p>
+          </div>
+
+          {/* Q4 2025 - Marketplace Revamp */}
+          <div className="award-item">
+            <h3 className="award-title">
+              Stellar Award – Marketplace Revamp (Q4 2025)
+            </h3>
+
+            <p className="award-org">
+              Paisabazaar Stellar Awards | October–December 2025
+            </p>
+
+            <p className="text-content">
+              Recognized as part of the team for revamping the lending
+              marketplace and rebuilding the customer-facing platform
+              to help customers explore loan products across multiple
+              categories, including personal loans, business loans, and
+              home loans, with a primary focus on the personal loan journey.
+            </p>
+          </div>
         </section>
 
 
@@ -225,7 +270,7 @@ export default function Portfolio() {
 
 
             <p className="job-date">
-              Dec 2025 – Present
+              June 2025 – Nov 2026
             </p>
 
 
@@ -278,19 +323,6 @@ export default function Portfolio() {
 
             <div className="experience-item">
 
-              <h3 className="job-title">
-                Software Developer Level 1
-              </h3>
-
-
-              <p className="company-name">
-                Paisabazaar
-              </p>
-
-
-              <p className="job-date">
-                June 2025 – Nov 2025
-              </p>
 
 
               <ul>
